@@ -50,8 +50,22 @@ class Utils:
         
         return amount
 
-    def convertArrayWithLettersToNumbers():
+    def convertArrayWithLettersToNumbers(arrayAux):
         print("ERROR!")
+        i = 0
+
+        #Search each element in list to replace the letter to number value
+        while i < len(arrayAux):
+            if arrayAux[i] == "A": arrayAux[i] = "10"
+            elif arrayAux[i] == "B": arrayAux[i] = "11"
+            elif arrayAux[i] == "C": arrayAux[i] = "12"
+            elif arrayAux[i] == "D": arrayAux[i] = "13"
+            elif arrayAux[i] == "E": arrayAux[i] = "14"
+            elif arrayAux[i] == "F": arrayAux[i] = "15"
+            i += 1
+        
+        return arrayAux
+
     
     def convertArrayWithNumbersToLetters(self, arrayAux):
         print(f"\nBefore: {arrayAux}\n")

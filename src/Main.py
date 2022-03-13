@@ -8,7 +8,27 @@ class Main:
 
         #Split each digit into a different index inside array
         self.arrayStringNormal = list(self.numberValue)
-        self.arrayStringNormal = self.convertArrayWithLettersToNumbers()
+
+        ##############################
+        #Testing zone - begin
+        ##############################
+
+        #self.arrayStringNormal = self.convertArrayWithLettersToNumbers()
+
+
+        #Utils.convertArrayWithLettersToNumbers()
+        #Utils.convertArrayWithLettersToNumbers(2)
+
+
+        print(self.arrayStringNormal)
+        self.arrayStringNormal = Utils.convertArrayWithLettersToNumbers(self.arrayStringNormal)
+        
+        #print(arrayStringNormal)
+
+        ##############################
+        #Testing zone - end
+        ##############################
+
         self.arrayNumberNormal = [ int(x) for x in self.arrayStringNormal ]
         self.arrayStringInverted = list(reversed(self.arrayStringNormal))
         self.arrayNumberInverted = [ int(x) for x in self.arrayStringInverted ]
@@ -22,8 +42,7 @@ class Main:
         self.numberValue = self.numberValue
         #print(f"{self.numberValue}")
 
-        #Utils.convertArrayWithLettersToNumbers()
-
+    """        
     def convertArrayWithLettersToNumbers(self):
         i = 0
 
@@ -38,7 +57,8 @@ class Main:
             i += 1
         
         return self.arrayStringNormal
-
+    """
+    
     def selectWorkflow(self):
         callingUtils = Utils(self.arrayNumberInverted, self.numberValue, self.numberBaseCurrent, self.numberBaseTarget)
         
