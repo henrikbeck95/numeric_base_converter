@@ -2,7 +2,7 @@
 from Calculator import Calculator
 
 #Declaring the global variables (by input method)
-numberValue = input("Valor numérico: ")
+numberValue = input("Valor numérico: ") #Letters must be set as uppercase
 numberBaseCurrent = int(input("Base numérica atual: "))
 numberBaseTarget = int(input("Base numérica desejada: "))
 
