@@ -16,7 +16,7 @@ class Utils:
         print(f"-------------------------------------------")
         print(f"Síntaxe:\t\t({self.numberValue}){self.numberBaseCurrent} = ({result}){self.numberBaseTarget}")
     
-    def convertFromBaseHigherToBaseLower(self, numberAux):
+    def convertBaseMethodDivider(self, numberAux):
         arrayNormal = []
         aux = int(numberAux)
         i = 0
@@ -38,7 +38,7 @@ class Utils:
 
         return ''.join(map(str, arrayInverted))
     
-    def convertFromBaseLowerToBaseHigher(self, numberAux):
+    def convertBaseMethodMultiplier(self, numberAux):
         print(numberAux)
         aux = 0
         amount = 0
