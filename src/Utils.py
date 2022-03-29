@@ -51,7 +51,6 @@ class Utils:
         return amount
 
     def convertArrayWithLettersToNumbers(arrayAux):
-        print("ERROR!")
         i = 0
 
         #Search each element in list to replace the letter to number value
@@ -62,11 +61,27 @@ class Utils:
             elif arrayAux[i] == "D": arrayAux[i] = "13"
             elif arrayAux[i] == "E": arrayAux[i] = "14"
             elif arrayAux[i] == "F": arrayAux[i] = "15"
+            elif arrayAux[i] == "G": arrayAux[i] = 16
+            elif arrayAux[i] == "H": arrayAux[i] = 17
+            elif arrayAux[i] == "I": arrayAux[i] = 18
+            elif arrayAux[i] == "J": arrayAux[i] = 19
+            elif arrayAux[i] == "K": arrayAux[i] = 20
+            elif arrayAux[i] == "L": arrayAux[i] = 21
+            elif arrayAux[i] == "M": arrayAux[i] = 22
+            elif arrayAux[i] == "N": arrayAux[i] = 23
+            elif arrayAux[i] == "O": arrayAux[i] = 24
+            elif arrayAux[i] == "P": arrayAux[i] = 25
+            elif arrayAux[i] == "Q": arrayAux[i] = 26
+            elif arrayAux[i] == "R": arrayAux[i] = 27
+            elif arrayAux[i] == "S": arrayAux[i] = 28
+            elif arrayAux[i] == "T": arrayAux[i] = 29
+            elif arrayAux[i] == "U": arrayAux[i] = 30
+            elif arrayAux[i] == "V": arrayAux[i] = 31
+            elif arrayAux[i] == "W": arrayAux[i] = 32
             i += 1
         
         return arrayAux
 
-    
     def convertArrayWithNumbersToLetters(self, arrayAux):
         print(f"\nBefore: {arrayAux}\n")
 
@@ -81,6 +96,24 @@ class Utils:
             elif arrayAux[i] == 13: arrayAux[i] = "D"
             elif arrayAux[i] == 14: arrayAux[i] = "E"
             elif arrayAux[i] == 15: arrayAux[i] = "F"
+            elif arrayAux[i] == 16: arrayAux[i] = "G"
+            elif arrayAux[i] == 17: arrayAux[i] = "H"
+            elif arrayAux[i] == 18: arrayAux[i] = "I"
+            elif arrayAux[i] == 19: arrayAux[i] = "J"
+            elif arrayAux[i] == 20: arrayAux[i] = "K"
+            elif arrayAux[i] == 21: arrayAux[i] = "L"
+            elif arrayAux[i] == 22: arrayAux[i] = "M"
+            elif arrayAux[i] == 23: arrayAux[i] = "N"
+            elif arrayAux[i] == 24: arrayAux[i] = "O"
+            elif arrayAux[i] == 25: arrayAux[i] = "P"
+            elif arrayAux[i] == 26: arrayAux[i] = "Q"
+            elif arrayAux[i] == 27: arrayAux[i] = "R"
+            elif arrayAux[i] == 28: arrayAux[i] = "S"
+            elif arrayAux[i] == 29: arrayAux[i] = "T"
+            elif arrayAux[i] == 30: arrayAux[i] = "U"
+            elif arrayAux[i] == 31: arrayAux[i] = "V"
+            elif arrayAux[i] == 32: arrayAux[i] = "W"
+
             i += 1
         
         print(f"\nAfter: {arrayAux}")
