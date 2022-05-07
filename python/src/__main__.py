@@ -7,6 +7,9 @@ def clear():
     #Clear terminal prompt screen according to operating system
     os.system('cls' if os.name == 'nt' else 'clear')
 
+def displayMessageError():
+    print("A opção selecionada é inválida!")
+
 def isInteger(string):
     if string[0] == ('-', '+'):
         return string[1:].isdigit()
@@ -31,48 +34,39 @@ while True:
     #Menu selected option validation for not breaking the software
     if isInteger(menuOption) == True:
         menuOption = int(menuOption)
-    else:
-        menuOption == 99
 
-    #Menu workflow according the selected option
-    if menuOption == 0:
-        break
-    elif menuOption == 1:
-        numberBaseCurrent = 10
-        numberBaseTarget = 2
-        numberValue = input("Informe número a ser convertido: ")
-    elif menuOption == 2:
-        numberBaseCurrent = 10
-        numberBaseTarget = 8
-        numberValue = input("Informe número a ser convertido: ")
-    elif menuOption == 3:
-        numberBaseCurrent = 10
-        numberBaseTarget = 16
-        numberValue = input("Informe número a ser convertido: ")
-    elif menuOption == 4:
-        numberBaseCurrent = 2
-        numberBaseTarget = 10
-        numberValue = input("Informe número a ser convertido: ")
-    elif menuOption == 5:
-        numberBaseCurrent = 8
-        numberBaseTarget = 10
-        numberValue = input("Informe número a ser convertido: ")
-    elif menuOption == 6:
-        numberBaseCurrent = 16
-        numberBaseTarget = 10
-        numberValue = input("Informe número a ser convertido: ")
+        #Menu workflow according the selected option
+        if menuOption == 0:
+            exit(0)
+        elif menuOption == 1:
+            numberValue = input("Informe número a ser convertido: ")
+            callingCalculator = Calculator(numberValue, 10, 2)
+            callingCalculator.selectWorkflow()
+        elif menuOption == 2:
+            numberValue = input("Informe número a ser convertido: ")
+            callingCalculator = Calculator(numberValue, 10, 8)
+            callingCalculator.selectWorkflow()
+        elif menuOption == 3:
+            numberValue = input("Informe número a ser convertido: ")
+            callingCalculator = Calculator(numberValue, 10, 16)
+            callingCalculator.selectWorkflow()
+        elif menuOption == 4:
+            numberValue = input("Informe número a ser convertido: ")
+            callingCalculator = Calculator(numberValue, 2, 10)
+            callingCalculator.selectWorkflow()
+        elif menuOption == 5:
+            numberValue = input("Informe número a ser convertido: ")
+            callingCalculator = Calculator(numberValue, 8, 10)
+            callingCalculator.selectWorkflow()
+        elif menuOption == 6:
+            numberValue = input("Informe número a ser convertido: ")
+            callingCalculator = Calculator(numberValue, 16, 10)
+            callingCalculator.selectWorkflow()
+        else:
+            displayMessageError()
     else:
-        print("A opção selecionada é inválida!")
-        print("Para não perder a viagem até aqui, demonstraremos a seguir a comprovação que (0)x = (0)y para qualquer base decimal")
+        displayMessageError()
         
-        numberBaseCurrent = 0
-        numberBaseTarget = 0
-        numberValue = 0
-
-    #Calculate
-    callingCalculator = Calculator(numberValue, numberBaseCurrent, numberBaseTarget)
-    callingCalculator.selectWorkflow()
-
     input("Pressione a tecla ENTER para continuar...")
     clear()
 
