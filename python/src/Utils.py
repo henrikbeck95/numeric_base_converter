@@ -55,12 +55,12 @@ class Utils:
 
         #Search each element in list to replace the letter to number value
         while i < len(arrayAux):
-            if arrayAux[i] == "A": arrayAux[i] = "10"
-            elif arrayAux[i] == "B": arrayAux[i] = "11"
-            elif arrayAux[i] == "C": arrayAux[i] = "12"
-            elif arrayAux[i] == "D": arrayAux[i] = "13"
-            elif arrayAux[i] == "E": arrayAux[i] = "14"
-            elif arrayAux[i] == "F": arrayAux[i] = "15"
+            if arrayAux[i] == "A": arrayAux[i] = 10
+            elif arrayAux[i] == "B": arrayAux[i] = 11
+            elif arrayAux[i] == "C": arrayAux[i] = 12
+            elif arrayAux[i] == "D": arrayAux[i] = 13
+            elif arrayAux[i] == "E": arrayAux[i] = 14
+            elif arrayAux[i] == "F": arrayAux[i] = 15
             elif arrayAux[i] == "G": arrayAux[i] = 16
             elif arrayAux[i] == "H": arrayAux[i] = 17
             elif arrayAux[i] == "I": arrayAux[i] = 18
