@@ -65,12 +65,13 @@ while True:
             callingCalculator.selectWorkflow()
         elif menuOption == 99:
             clear()
-            print("\t\tCŕeditos")
+
+            print("\t\tCréditos")
             print("-----------------------------------------")
+            print("Guilherme Carini\t\t20224435")
             print("Gustavo Scapim\t\t\t19922639")
             print("Henrik Beck\t\t\t20111827")
             print("Micael Trivelato\t\t20037961")
-            print("Guilherme Carini\t\t20224435")
             print("Victor Henrique Ranalli\t\t20001088")
             print("-----------------------------------------")
         else:
@@ -79,6 +80,7 @@ while True:
         displayMessageError()
 
     input("Pressione a tecla ENTER para continuar...")
+
     clear()
 
 ###########################################################
