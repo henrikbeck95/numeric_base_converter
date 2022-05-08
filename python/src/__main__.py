@@ -26,6 +26,7 @@ while True:
     print("[4] Converter base binária para decimal")
     print("[5] Converter base octal para decimal")
     print("[6] Converter base hexadecimal para decimal")
+    print("[99] Exibir cŕeditos")
     print("[0] Sair")
 
     #Menu selected option by user
@@ -62,11 +63,21 @@ while True:
             numberValue = input("Informe número a ser convertido: ")
             callingCalculator = Calculator(numberValue, 16, 10)
             callingCalculator.selectWorkflow()
+        elif menuOption == 99:
+            clear()
+            print("\t\tCŕeditos")
+            print("-----------------------------------------")
+            print("Gustavo Scapim\t\t\t19922639")
+            print("Henrik Beck\t\t\t20111827")
+            print("Micael Trivelato\t\t20037961")
+            print("Guilherme Carini\t\t20224435")
+            print("Victor Henrique Ranalli\t\t20001088")
+            print("-----------------------------------------")
         else:
             displayMessageError()
     else:
         displayMessageError()
-        
+
     input("Pressione a tecla ENTER para continuar...")
     clear()
 
